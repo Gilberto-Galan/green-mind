@@ -14,5 +14,11 @@ Se requiere instalacion de MongoDB
 Instalar la paqueteria
 
 ```bash
-  npm install express mongoose morgan 
+  npm install express mongoose morgan nodemon
+```
+
+Se ejecuta con nodemon
+
+```bash
+  nodemon app.js
 ```
