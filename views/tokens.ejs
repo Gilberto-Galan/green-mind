@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      #main-header {
+        background: #ffffff;
+        color: white;
+        height: 80px;
+    }
+    
+    #logo-header {
+      float: left;
+      padding: 4px 0 2 4%;
+      text-decoration: none;
+        width: 250px;
+    }
+    
+    #logo-header:hover {
+      color: #1c5b32;
+    }
+      
+    #logo-header .site-desc {
+      display: block;
+      font-weight: 300;
+      font-size: 0.8em;
+      color: #ffffff;
+    }
+    
+    nav img.nav-mone {
+        height: 35px;
+        margin-left: 5px; 
+        vertical-align: middle;
+      }
+    
+    
+    
+    nav {
+        float: right;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-right: 20px;
+    }
+            
+    nav ul li {
+        display: inline-block;
+        line-height: 80px;
+    }
+                    
+    nav ul li a {
+        display: block;
+        padding: 0 25px;
+        text-decoration: none;
+    }
+                      
+    nav ul li a:hover {
+        background: #0b712993;
+    }
+    
+    #main-header {
+        background: #ffffff;
+        color: white;
+        height: 80px;
+        width: 100%; 
+        left: 0; 
+        top: 0; 
+        position: fixed; }
+    
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          }
+          
+          .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+          }
+          
+          h1 {
+            margin-bottom: 20px;
+            color: #4CAF50;
+          }
+          
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+          }
+          
+          th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            vertical-align: middle;
+          }
+          
+          th {
+            background-color: #4CAF50;
+            color: white;
+          }
+          
+          tr:hover {
+            background-color: #f1f1f1;
+          }
+          
+          .course-image {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 10px;
+            vertical-align: middle;
+          }    
+    </style>
+    <title>Tokens</title>
+</head>
+<%- include('./navbar') %>
+
+    <div class="container">
+        <h1>Historial</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Curso</th>
+              <th>Tokens</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="/img/tab1.jpg" alt="Introducción a la Sostenibilidad" class="course-image">
+                Introducción a la Sostenibilidad
+              </td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/img/tab2.png" alt="Tecnologías de Energía Renovable" class="course-image">
+                Tecnologías de Energía Renovable
+              </td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/img/tab3.jpg" alt="Vida Eco-Amigable" class="course-image">
+                Vida Eco-Amigable
+              </td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/img/tab4.png" alt="Política y Regulación Ambiental" class="course-image">
+                Política y Regulación Ambiental
+              </td>
+              <td>6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    
+
+
+    
+</body>
+</html>

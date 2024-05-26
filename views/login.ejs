@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%-include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <title>Iniciar sesión</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="col-sm-6 mx-auto">
+            <div class="card mt-5">
+                <div class="card-body text-center">
+                    <h1 class="text-center">
+                        <span class="fa fa-sign-in"></span>Iniciar sesion
+                    </h1>
+
+                    <% if (message) { %>
+                        <p><%= message %></p>
+                    <% } %>        
+                    
+                    <form action="/login" method="POST">
+                        <div class="text-center">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                            <br>
+                        <div class="text-center">
+                            <label for="password">Contraseña:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                            <br>
+                        <button class="text-center" type="submit">Iniciar sesión</button>
+                    </form>
+                    <p>¿No tienes una cuenta? <a href="/register">Registrarse</a></p>                   
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+

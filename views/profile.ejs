@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%-include('../partials/head.ejs') %>
+    <title>Perfil</title>
+    <style>
+      body {
+          margin: 0; 
+          padding: 0;
+          font-family: Helvetica,Arial, sans-serif;
+          color: #ffffff;
+          background: #ffffff;
+          font-size: 1em;
+          line-height: 1.5em;
+      }
+      
+      #main-header {
+          background: #ffffff;
+          color: white;
+          height: 80px;
+      }
+      
+      #logo-header {
+          float: left;
+          padding: 4px 0 2 4%;
+          text-decoration: none;
+          width: 250px;
+      }
+      
+      #logo-header:hover {
+          color: #1c5b32;
+      }
+          
+      #logo-header .site-desc {
+          display: block;
+          font-weight: 300;
+          font-size: 0.8em;
+          color: #ffffff;
+      }
+      
+      
+      nav img.nav-mone {
+          height: 35px;
+          margin-left: 5px; 
+           
+        }
+      
+      
+      
+      nav {
+          float:right;
+      }
+      
+      nav ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          padding-right: 20px;
+      }
+              
+      nav ul li {
+          display: inline-block;
+          line-height: 80px;
+      }
+                      
+      nav ul li a {
+          display: block;
+          padding: 0 25px;
+          text-decoration: none;
+      }
+                        
+      nav ul li a:hover {
+          background: #0b712993;
+      }
+
+      .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin: 100px 10px 10px 400px;
+    }
+
+      .carousel-item img{
+        width: 100px;
+        height: auto;
+      }
+      
+      #main-header {
+          background: #ffffff;
+          color: white;
+          height: 80px;
+          width: 100%; 
+          left: 0; 
+          top: 0; 
+          position: fixed; }
+      
+      img{
+          max-width: 60%;
+          height: 80px;
+      }
+      
+       .container-items{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+       }
+      
+       .item {
+          border-radius: 10px;
+       }
+      
+       .item:hover {
+          box-shadow: 0 10px 20px  rgba(0,0,0,0,20); 
+       }
+      
+       
+      
+       .item img{
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          border-radius: 10px 10px 0 0;
+          transition: all .5s;
+          margin: 10px 0px 10px 65px;
+       }
+      
+      .item figure{
+          overflow: hidden;
+          margin: 80px 10px 0px auto;
+      }
+      
+       .item:hover img {
+          transform: scale(1.2);
+       }
+      
+       .info-product {
+          padding: 15px 30px ;
+          line-height: 2;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;  
+       }
+      
+       .price {
+          font-size: 18px;
+          font-weight: 900;
+       }
+      
+       .info-product button {
+          border: none;
+          background: none;
+          background-color: #1c5b32;
+          color: #ffffff;
+          padding: 15px 10px;
+          cursor: pointer;
+       }
+      
+       .info-product h1 {
+          font-size: 30px;
+          color: black;
+       }
+         
+  </style>
+</head>
+<body>
+
+
+      <%- include('./navbar') %>
+
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/img/foto1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/img/foto2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/foto3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- <div class="card mb-3" style="max-width: 540px; padding: 10px; margin: 100px 10px 10px 400px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/img/usuario.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+
+              <h5 class="card-title">Perfil</h5>
+              <p class="card-text">
+                <% if (user) { %>
+                    <p>Bienvenido, <%= user.email %>!</p>
+                <% } else { %>
+                    <p>Bienvenido!</p>
+                <% } %>
+              </p>
+              <!-- <p><a href="/logout">Cerrar sesión</a></p> -->
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

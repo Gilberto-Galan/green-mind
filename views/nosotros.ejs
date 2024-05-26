@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nosotros.css">
+    <%-include('../partials/head.ejs') %>
+    <style>
+        body {
+            margin: 0; 
+            padding: 0;
+            font-family: Helvetica,Arial, sans-serif;
+            color: #ffffff;
+            background: #ffffff;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+        
+        #main-header {
+            background: #ffffff;
+            color: white;
+            height: 80px;
+        }
+        
+        #logo-header {
+            float: left;
+            padding: 4px 0 2 4%;
+            text-decoration: none;
+            width: 250px;
+        }
+        
+        #logo-header:hover {
+            color: #1c5b32;
+        }
+            
+        #logo-header .site-desc {
+            display: block;
+            font-weight: 300;
+            font-size: 0.8em;
+            color: #ffffff;
+        }
+        
+        
+        nav img.nav-mone {
+            height: 35px;
+            margin-left: 10px; 
+             
+          }
+        
+        
+          nav {
+            float: right;
+        }
+        
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            padding-right: 20px;
+        }
+                
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+        }
+                        
+        nav ul li a {
+            display: block;
+            padding: 0 25px;
+            text-decoration: none;
+        }
+                          
+        nav ul li a:hover {
+            background: #0b712993;
+        }
+        
+        #main-header {
+            background: #ffffff;
+            color: white;
+            height: 80px;
+            width: 100%; 
+            left: 0; 
+            top: 0; 
+            position: fixed; }
+        
+            .about-us {
+                background-color: #fff;
+                padding: 50px 0;
+                text-align: center;
+              }
+              
+              .container {
+                width: 80%;
+                max-width: 1200px;
+                margin: 0 auto;
+                margin-top: 100px;
+              }
+              
+              h1 {
+                color: #31840D;
+                margin-bottom: 50px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 50px;
+              }
+              
+              .content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+              }
+              
+              .image {
+                flex: 1;
+                min-width: 500px;
+                margin-right: 20px;
+              }
+              
+              .image img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              }
+              
+              .text {
+                flex: 2;
+                min-width: 300px;
+                text-align: left;
+              }
+              
+              .text p {
+                color: #555;
+                line-height: 1.6;
+                margin-bottom: 20px;
+              }
+              
+              @media (max-width: 768px) {
+                .content {
+                  flex-direction: column;
+                }
+              
+                .image {
+                  margin-right: 0;
+                  margin-bottom: 20px;
+                }
+              
+                .text {
+                  text-align: center;
+                }
+              }
+    </style>
+    <title>Nosotros</title>
+</head>
+<body>
+    <%- include('./navbar') %>
+
+    <section class="about-us">
+        <div class="container">
+          <h1>Nosotros</h1>
+          <div class="content">
+            <div class="image">
+              <img src="/img/nosotros.jpg" alt="Nuestro Equipo">
+            </div>
+            <div class="text">
+              <p>
+                En GreenMind, nos dedicamos a promover la educación ambiental y la innovación tecnológica sostenible. Nuestro equipo está compuesto por expertos en diversas áreas que trabajan juntos para crear una plataforma que inspire y capacite a individuos a contribuir positivamente al medio ambiente.
+              </p>
+              <p>
+                Nuestra misión es fomentar el aprendizaje y la acción ambiental a través de recursos educativos, proyectos comunitarios y herramientas tecnológicas avanzadas. Creemos en el poder del conocimiento para generar un cambio significativo y sostenible.
+              </p>
+              <p>
+                Únete a nosotros en nuestro viaje hacia un futuro más verde y sostenible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    
+</body>
+</html>

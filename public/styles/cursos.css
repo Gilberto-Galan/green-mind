@@ -1,0 +1,144 @@
+body {
+    margin: 0; 
+    padding: 0;
+    font-family: Helvetica,Arial, sans-serif;
+    color: #ffffff;
+    background: #ffffff;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+#main-header {
+    background: #ffffff;
+    color: white;
+    height: 80px;
+}
+
+#logo-header {
+	float: left;
+	padding: 4px 0 2 4%;
+	text-decoration: none;
+    width: 250px;
+}
+
+#logo-header:hover {
+	color: #1c5b32;
+}
+	
+#logo-header .site-desc {
+	display: block;
+	font-weight: 300;
+	font-size: 0.8em;
+	color: #ffffff;
+}
+
+
+nav img.nav-mone {
+    height: 35px;
+    margin-left: 5px; 
+     
+  }
+
+
+
+nav {
+    float:right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+        
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+                
+nav ul li a {
+    display: block;
+    padding: 0 25px;
+    text-decoration: none;
+}
+                  
+nav ul li a:hover {
+    background: #0b712993;
+}
+
+#main-header {
+    background: #ffffff;
+    color: white;
+    height: 80px;
+    width: 100%; 
+    left: 0; 
+    top: 0; 
+    position: fixed; }
+
+img{
+    max-width: 60%;
+    height: 80px;
+}
+
+ .container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+ }
+
+ .item {
+    border-radius: 10px;
+ }
+
+ .item:hover {
+    box-shadow: 0 10px 20px  rgba(0,0,0,0,20); 
+ }
+
+ 
+
+ .item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+    margin: 10px 0px 10px 65px;
+ }
+
+.item figure{
+    overflow: hidden;
+    margin: 80px 10px 0px auto;
+}
+
+ .item:hover img {
+    transform: scale(1.2);
+ }
+
+ .info-product {
+    padding: 15px 30px ;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+ }
+
+ .price {
+    font-size: 18px;
+    font-weight: 900;
+ }
+
+ .info-product button {
+    border: none;
+    background: none;
+    background-color: #1c5b32;
+    color: #ffffff;
+    padding: 15px 10px;
+    cursor: pointer;
+ }
+
+ .info-product h1 {
+    font-size: 30px;
+    color: black;
+ }
+   
